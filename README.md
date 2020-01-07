@@ -8,9 +8,11 @@ This is the project made for myself (without Codecool purposes).<br/>
 **The goal was to:**
 * practice front-end skills:
   * HTML/CSS
+  * JS
   * web design
-* store data (Login and voting informations) in a local database (MySQL)
+* store data (Login and registering informations) in a local database (MySQL)
 * use PHP as a back-end
+* data form validations (password length, difficulty, captcha mechanism)
 * create a simple user and admin login system with sessions
 
 
@@ -18,6 +20,7 @@ This is the project made for myself (without Codecool purposes).<br/>
 * PHP 
 * SQL
 * HTML, CSS
+* JS
 
 ## Screenshots:
 
