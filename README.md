@@ -21,7 +21,9 @@ This is the project made for myself (without Codecool purposes).<br/>
 
 ## Screenshots:
 
-
+Start page:
 ![alt text](https://github.com/KacperMitkowski/Music-band/blob/master/screenshots/1.png)
+Possibility of listening:
 ![alt text](https://github.com/KacperMitkowski/Music-band/blob/master/screenshots/2.png)
+Login forms:
 ![alt text](https://github.com/KacperMitkowski/Music-band/blob/master/screenshots/3.png)
