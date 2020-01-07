@@ -1,4 +1,4 @@
-# API WARS
+# Music band
 
 ## Music Band:
 This is fun page dedicated to my friends' band and their work made in my free time before starting Codecool course.
