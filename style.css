@@ -1,0 +1,1102 @@
+/* ---------------------------------------------------------------------------------- */
+/* SCROLLBARY */
+
+/* Wysokość i szerokość scrollbara */
+body::-webkit-scrollbar
+{
+    width: 15px;
+    height: 15px;
+}
+
+/* Kolor i cień pasków */
+body::-webkit-scrollbar-track
+{
+    background-color: #1E2224;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.9);
+}
+
+/* Kolor, cień i zaokrąglenie kciuków */
+body::-webkit-scrollbar-thumb
+{
+    background: linear-gradient(35deg,  #5C5249 20%, #4A2404 100%); 
+    border-radius: 25px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.9);
+}
+
+/* Kolor i grafika rogu */
+body::-webkit-scrollbar-corner
+{
+    background: #5C5C5C url(img/corner.png) 2px 2px no-repeat;
+}
+
+/* Kolor i cień strzałki up */
+body::-webkit-scrollbar-button:vertical:decrement
+{
+    background: #5C5C5C url(img/up.png) 2px 2px no-repeat;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.9);
+}
+
+/* Kolor i cień strzałki down */
+body::-webkit-scrollbar-button:vertical:increment
+{
+    background: #5C5C5C url(img/down.png) 2px 3px no-repeat;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.9);
+}
+
+/* Kolor i cień strzałki left */
+body::-webkit-scrollbar-button:horizontal:decrement
+{
+    background: #5C5C5C url(img/left.png) 1px 2px no-repeat;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.9);
+}
+
+/* Kolor i cień strzałki right */
+body::-webkit-scrollbar-button:horizontal:increment
+{
+    background: #5C5C5C url(img/right.png) 3px 2px no-repeat;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.9);
+}
+
+/* ---------------------------------------------------------------------------------- */
+body
+{
+    /* Background pattern from Toptal Subtle Patterns */
+    background-image: url(img/tlo1.png);
+    margin: 0;
+    color: #9C4528;
+    font-family: 'Righteous', cursive;
+}
+
+/* LOGO ------------------------------------------------------------------------- */
+
+#logo
+{
+    width: 1000px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    font-size: 82px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-shadow:
+        3px 3px 0 #000,
+        3px -3px 0 #000,
+        -3px -3px 0 #000,
+        -3px 3px 0 #000;
+}
+
+/* TOP NAV ------------------------------------------------------------------------- */
+
+.topnav
+{
+    height: 40px;
+    background: linear-gradient(35deg,  #2B2B2B 30%, #4A2404 100%); 
+    text-align: center;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    -webkit-box-shadow: -2px 11px 153px 34px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 11px 153px 34px rgba(0,0,0,0.75);
+    box-shadow: -2px 11px 153px 34px rgba(0,0,0,0.75);
+    z-index: 2;
+}
+
+.sticky 
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#center
+{
+    display: flex;
+    justify-content: center;
+}
+
+ol
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ol > li
+{
+    background: linear-gradient(35deg,  #2B2B2B 30%, #4A2404 100%); 
+    color: #fff;    
+    float: left;
+    width: 200px;
+    height: 20px;
+    font-size: 17px;
+    letter-spacing: 3px;
+    padding: 10px 0;
+    border-right: 2px solid #000;
+    border-left: 2px solid #000;
+    opacity: 0.75;
+    margin: 0px 25px;
+    border-radius: 5px;
+}
+
+ol >li:hover
+{
+    background: linear-gradient(35deg,  #692103 30%, #FF6A00 100%); 
+    cursor: pointer;
+    opacity: 1;
+}
+
+ol > li > ul
+{
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    display: none;
+    border-radius: 5px;
+}
+
+ol > li:hover > ul
+{
+    display: block;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+ol > li > ul > li
+{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-bottom: 2px dotted #000;
+    position: relative;
+    background: linear-gradient(35deg,  #692103 30%, #FF6A00 100%); 
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+ol > li > ul > li:hover
+{
+    background: linear-gradient(35deg,  #793214 30%, #FF7B11 100%); 
+}
+
+.hover_menu_option
+{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+ol > li:first-child
+{
+    color: #fff;
+    float: left;
+    height: 20px;
+    font-size: 17px;
+    letter-spacing: 3px;
+    padding: 10px 5px;
+    border-right: 2px solid #000;
+    border-left: 2px solid #000;
+    opacity: 0.75;
+}
+
+.maly_div
+{
+    letter-spacing: 2px; 
+    float: left; 
+    width: 50%;
+}
+
+/* Style dla opcji po zalogowaniu się przez admina */
+
+.admin_option
+{
+    border: 0;
+    padding: 0;
+}
+
+.admin_link
+{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    height: 20px;
+    padding: 10px 0;
+    background: linear-gradient(35deg,  #1D085F 30%, #2037B8 100%);   
+    border-radius: 5px;
+    border-right: 2px solid #000;
+    border-left: 2px solid #000;
+}
+
+ol >li:hover > .admin_link
+{
+    background: linear-gradient(35deg,  #373F63 30%, #1D085F 100%);   
+}
+
+table
+{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    letter-spacing: 2px;
+    
+}
+
+thead
+{
+    color: yellow;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* PODNAGŁÓWEK ------------------------------------------------------------------------- */
+
+.podnaglowek
+{
+    font-size: 50px; 
+    text-align: center; 
+    text-shadow:
+    1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000,
+    -1px 1px 0 #000;
+}
+
+/* ZEGAR ------------------------------------------------------------------------- */
+
+#zegar
+{
+    width: 100%;
+    height: 20px;
+    padding: 15px 0;
+    background: linear-gradient(35deg,  #2B2B2B 30%, #4A2404 100%); 
+    text-align: center;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    color: #000;
+    -webkit-box-shadow: -2px 11px 153px 34px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 11px 153px 34px rgba(0,0,0,0.75);
+    box-shadow: -2px 11px 153px 34px rgba(0,0,0,0.75);
+}
+
+/* FOOTER ------------------------------------------------------------------------- */
+
+#footer
+{
+    width: 100%;
+    height: 20px;
+    padding: 15px 0;
+    background-color: #000;
+    text-align: center;
+}
+
+/* CONTENT ------------------------------------------------------------------------- */
+
+#content
+{
+    width: 50%;
+    min-height: 500px;
+    margin: auto;
+    /* Background pattern from Toptal Subtle Patterns */
+    background-image: url(img/tlo2.png);
+    color: #fff;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    text-align: justify;
+    padding: 40px;
+    -webkit-box-shadow: -2px 11px 153px 34px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 11px 153px 34px rgba(0,0,0,0.75);
+    box-shadow: -2px 11px 153px 34px rgba(0,0,0,0.75);
+}
+
+/* FUN CLUB ------------------------------------------------------------------------- */
+
+.rzad
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.rzadL
+{
+    width: 30%;
+    text-align: right;
+    font-size: 24px;
+    color: #9C4528;
+    letter-spacing: 5px;
+    text-shadow:
+        2px 2px 0 #000,
+        2px -2px 0 #000,
+        -2px -2px 0 #000,
+        -2px 2px 0 #000;
+}
+
+.strzala
+{
+    font-size: 40px;
+    color: #9C4528;
+    justify-content: center;
+    text-shadow:
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000,
+        -1px 1px 0 #000;
+}
+
+.rzadP
+{
+    width: 20%;
+    background: linear-gradient(20deg, #D1113A 0%, #FF6200 100%);
+    text-align: center; 
+    height: 40px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    opacity: 0.8;
+    transition: all .3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow:
+    1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000,
+    -1px 1px 0 #000;
+}
+
+.rzadP:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
+    background: linear-gradient(100deg, #D2223B 20%, #GG7311 60%);
+    opacity: 1;
+    -webkit-box-shadow: 0px 1px 87px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 87px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 87px 0px rgba(0,0,0,0.75); 
+}
+
+/* FORM LOGGING-------------------------------------------------------------------------------------- */
+
+#formLog
+{
+    margin-top: 80px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.login_in_login
+{
+    height: 26px;
+    background-color: #CCA891;
+    margin-right: 50px;
+    outline: none;
+    border: 2px solid #000;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.login_in_login:focus
+{
+    background-color: #E4A7EB;
+    opacity: 1;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.password_in_login
+{
+    height: 26px;
+    background-color: #CCA891;
+    margin-right: 50px;
+    outline: none;
+    border: 2px solid #000;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.password_in_login:focus
+{
+    background-color: #E4A7EB;
+    opacity: 1;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.password2_in_login
+{
+    height: 26px;
+    background-color: #CCA891;
+    outline: none;
+    border: 2px solid #000;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+
+.email_input
+{
+    height: 26px;
+    background-color: #CCA891;
+    margin-right: 50px;
+    outline: none;
+    border: 2px solid #000;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+
+::-webkit-input-placeholder {
+    color: #752A68;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+    color: #752A68;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+    color: #752A68;
+    }
+    :-ms-input-placeholder {
+    color: #752A68;
+    }
+
+#log_przycisk
+{ 
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 40px;
+    outline: none;
+    border: 2px solid #000;
+    border-radius: 15px;
+    background: linear-gradient(20deg, #D1113A 0%, #FF6200 100%);
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    transition: all .3s ease-in-out;
+    text-shadow:
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000,
+        -1px 1px 0 #000;
+}
+
+#log_przycisk:hover
+{ 
+    background: linear-gradient(20deg, #E2224B 0%, #GG7311 100%);
+    opacity: 1;
+    transform: scale(1.1);
+    -webkit-box-shadow: 0px 1px 87px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 87px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 87px 0px rgba(0,0,0,0.75);
+}
+
+#log_przycisk:focus
+{
+    background: linear-gradient(20deg, #E2224B 0%, #GG7311 100%);
+    opacity: 1;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+#formReg
+{
+    margin: auto;
+    width: 25%;
+    text-align: center;
+}
+
+.optionReg
+{
+    text-align: center;
+    font-size: 20px;
+}
+
+.optionRegInput
+{
+    height: 30px;
+    margin: auto;
+    width: 200px;
+    outline: none;
+    border: 2px solid #000;
+    border-radius: 15px;
+    background: linear-gradient(20deg, #D1113A 0%, #FF6200 100%);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    transition: all .3s ease-in-out;
+    text-shadow:
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000,
+        -1px 1px 0 #000;
+}
+
+.optionRegInput:focus
+{
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#przyciskReg
+{
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    background: linear-gradient(20deg, #D1113A 0%, #FF6200 100%);
+    border: 2px solid #000;
+    color: #fff;    
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow:
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000,
+        -1px 1px 0 #000;
+    opacity: 0.8;
+    outline: none;
+    transition: all .3s ease-in-out;
+}
+
+#przyciskReg:hover
+{
+    cursor: pointer;
+    opacity: 1;
+    background: linear-gradient(20deg, #E2224B 0%, #GG7311 100%);
+    transform: scale(1.1);
+}
+
+#przyciskReg:focus
+{
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+/* LINKI -------------------------------------------------------------------------------------- */
+
+/* FOUND IN THE BASEMENT LOGO ------------------ */
+.linkLogo 
+{
+    text-decoration: none;
+    color: #9C4528;
+}
+
+.linkLogo:hover
+{
+    color: #9D5639;
+}
+
+.linkLogo:active
+{
+    color: red;
+}
+
+/* OPTION IN TOPNAV ------------------ */
+.menuTopnavOption
+{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    height: 30px;
+}
+
+/* LINK LOG ABOVE LOGO ------------------ */
+
+#link_log_above_logo
+{
+    color: #9C4528;
+    text-decoration: none;
+}
+
+#link_log_above_logo:hover
+{
+    color: red;
+    text-decoration: none;
+}
+
+#link_log_above_logo:active
+{
+    color: green;
+    text-decoration: none;
+}
+
+/* LOG BUTTON IN FUN CLUB ------------------ */
+
+.log_button_in_fun_club
+{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 15px;
+}
+
+/* kontakt.php ------------------ */
+
+.socialdivs
+{
+    opacity: 0.8;
+}
+
+.fb
+{
+    float: left;
+    width: 25%;
+    height: 200px;
+    background-color: #3557a2;
+    font-size: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35%;
+    transition: all .2s ease-in-out;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 0px 115px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 115px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 115px 0px rgba(0,0,0,0.75);
+}
+
+.fb:hover
+{
+    cursor: pointer;
+    background-color: #244691;
+    transform: scale(1.1) rotate(10deg);
+    opacity: 1;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.yt
+{
+    float: left;
+    width: 25%;
+    height: 200px;
+    background-color: #d94348;
+    font-size: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35%;
+    transition: all .2s ease-in-out;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 0px 115px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 115px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 115px 0px rgba(0,0,0,0.75);
+}
+
+.yt:hover
+{
+    cursor: pointer;
+    background-color: #c83237;
+    transform: scale(1.1) rotate(10deg);
+    opacity: 1;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.tw
+{
+    float: left;
+    width: 25%;
+    height: 200px;
+    background-color: #3095d3;
+    font-size: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35%;
+    transition: all .2s ease-in-out;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 0px 115px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 115px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 115px 0px rgba(0,0,0,0.75);
+}
+
+.tw:hover
+{
+    cursor: pointer;
+    background-color: #2084c2;
+    transform: scale(1.1) rotate(10deg);
+    opacity: 1;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.gplus
+{
+    float: left;
+    width: 25%;
+    height: 200px;
+    background-color: #d95333;
+    font-size: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35%;
+    transition: all .2s ease-in-out;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 0px 115px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 115px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 115px 0px rgba(0,0,0,0.75);
+}
+
+.gplus:hover
+{
+    cursor: pointer;
+    background-color: #d84222;
+    transform: scale(1.1) rotate(10deg);
+    opacity: 1;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.socialLink
+{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* sklad.php -------------------------------------------- */
+
+.bandRow
+{
+   display: flex;
+   justify-content: space-around;
+   margin-top: 40px;
+   border-top: 2px dotted #7A6D6B;
+   padding-top: 20px;
+}
+
+.memberPhoto
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 115px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 115px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 115px 0px rgba(0,0,0,0.75);
+}
+
+.memberInfo
+{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.memberHeader
+{
+    font-size: 22px; 
+    color: #C7CE33;
+    margin-top: 0;
+}
+
+/* paczatki.php -------------------------------------------- */
+
+.listaHist
+{
+    list-style-type: none;
+    margin-bottom: 10px;    
+    padding: 0;
+}
+
+.naglowekHist
+{
+    margin-top: 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.naglowekHist:before
+{
+    content: "♬";
+    color: #CF6813;
+    font-size: 30px;
+}
+
+.naglowekHist:after
+{
+    content: "♬";
+    color: #CF6813;
+    font-size: 30px;
+}
+
+.paragrafHistorii
+{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-shadow:
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000,
+        -1px 1px 0 #000;
+}
+
+.nagLink
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.img_cien
+{
+    -webkit-box-shadow: 0px 0px 115px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 115px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 115px 0px rgba(0,0,0,0.75);
+}
+
+.nagLink:hover
+{
+    color: red;
+}
+
+.scrollup
+{
+    width: 64px;
+    height: 64px;
+    text-decoration: none;
+    background-image: url("img/powrot.png");
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: none;
+    border-radius: 50%;
+}
+
+/* inspiracje.php -------------------------------------------- */
+
+.fav_band
+{
+    float: left;
+    width: 25%;
+    height: 200px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 115px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 115px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 115px 0px rgba(0,0,0,0.75);
+}
+
+/* plyty.php -------------------------------------------- */
+
+.song_list
+{
+
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    width: 25%;
+    margin: auto;
+}
+
+.song
+{
+    border: 1px solid #000;
+    border-radius: 20px;
+    height: 28px;
+    font-size: 20px;
+    margin: 0;
+    opacity: 0.8;
+    transition: all .3s ease-in-out;
+}
+
+.song:hover
+{
+    background-color: red;
+    cursor: pointer;
+    transform: skew(15deg, 0deg) scale(0.95);
+    opacity: 1;
+    color: #000;
+}
+
+#music_header
+{
+    width: 500px; 
+    font-size: 30px;
+    text-align: center;
+}
+
+#music
+{
+    margin-top: 100px;
+}
+
+/* concert.php -------------------------------------------- */
+
+#concert_div
+{
+    display: flex; 
+    justify-content: space-around; 
+    font-size: 25px; 
+    margin-top: 28px;
+}
+
+.koncertLink
+{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: all .5s ease-in-out;
+    text-shadow:
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000,
+        -1px 1px 0 #000;
+}
+
+.koncertLink:hover
+{
+    display: block;
+    transform: scale(1.8);
+    animation-name: color;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+    text-shadow:
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000,
+        -1px 1px 0 #000;
+}
+
+@keyframes color 
+{
+    100% 
+    {
+      color: #9C4528;
+    }
+}
+
+/* galeria.php */
+
+.overlay
+{
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+
+.overlay:hover
+{
+    transform: scale(1.05);
+    
+}
+
+.overlay .link
+{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 280px;
+	height: 30px;
+    background-color: #111;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.overlay:hover .link
+{
+    opacity: 0.8;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 20px;
+    transition: all .5s ease-in-out;
+}
+
+.gal
+{
+    width: 280px;
+    height: 250px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 115px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 115px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 115px 0px rgba(0,0,0,0.75);
+}
+
+.gal:hover
+{
+    cursor: pointer;
+}
+
+
+/* pamiec.php -------------------------------------------- */
+
+.pamiec_pojemnik
+{
+    margin: auto;
+    width: 70%; 
+    margin-top: 40px;
+}
+
+.pamiec
+{
+    width: 100px;
+    height: 100px;
+    float: left;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    font-size: 70px;
+}
+
+.pamiec:hover
+{
+    background-color: green;
+    color: yellow;
+}
+
+.pamiec:active
+{
+    color: red;
+}
+
+#czas_gry
+{
+    text-align: center;
+    font-size: 52px;
+}
+
+/* Wchodzenie z palca, 
+ruchy gwiazdek, 
+addeventlistener zamiast onlicka, 
+formaty plików*/
